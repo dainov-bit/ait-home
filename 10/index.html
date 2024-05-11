@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>WebPay</title>
+<link rel="stylesheet" href="./style.css"/>
+<script src="./script.js"></script>
+<script src="./user.js"></script></script>
+</head>
+<body>
+<header>
+<h1>WebPay</h1>
+</header>
+<nav>
+<ul style="list-style-type:none">
+<li class="menu_item"><a  class="menu_link" href="#index">Главная</a></li>
+<li class="menu_item"><a  class="menu_link" href="#info">Про WebPay</a></li>
+<li class="menu_item"><a tabindex='0' class='menu_link' href='#contacts'>Контакты</a></li>
+<li class="menu_item"><a id='users' tabindex='0' class='menu_link' href='#users'>Пользователи</a></li>
+
+</ul>
+</nav>
+<main>
+<div class='pages' content='index'>
+<div id='author'>
+<h2>Авторизация</h2>
+<form id='author_form' role='form'>
+<p><label for='email'>* Email: </label>
+<input type='email' id='email' title='Введите email адрес' required></p>
+<p><label for='password'>* Пароль: </label>
+<input required type='password' name='password' id='password' title='Введите пароль'></p>
+<p><button type='submit'>Войти</button></p>
+</form>
+<p><a class='menu_link' href="#reg">Зарегистрироваться</a></p>
+</div>
+<div style='display:none' id='cabinet'>
+<h2>Кабинет</h2>
+<div id='account_info'>
+<p>Добро пожаловать <span id='account_name'></span> <span id='account_surname'></span></p>
+<p>Ваш персональный номер: <span id='account_id'></span></p>
+<p>Баланс: <span id='account_money'></span> <span lang='de'>Euro</span>
+<button id='top_up'>Пополнить</button></span></p>
+<p><button id='exit'>Выйти</button></p>
+</div>
+<br>
+<div id='account_services'>
+<h2>Услуги</h2>
+<p>Оплата за свет: -55.99 <span lang='de'>Euro</span> 
+<button id='licht_pay'>оплатить</button></p>
+<p>Оплата за газ: -25.99 <span lang='de'>Euro</span> 
+<button id='gaz_pay'>оплатить</button></p>
+
+</div>
+</div>
+</div>
+<div class='pages' content='reg'>
+<h2>Регистрация</h2>
+<p><a href="#index" class='menu_link'>Авторизация</a></p>
+<form id='form_reg'>
+<p><label for='reg_email'>* Email: </label><br>
+<input id='reg_email' type='email' required name='email' placeholder='Введите ваш действующий email'></p>
+<p><label for="reg_password">* Пароль: </label><br>
+<input required id='reg_password' type='password' name='password' placeholder="Введите ваш пароль"></p>
+<p><label for='reg_name'>* Имя: </label><br>
+<input required type='text' name='name' id='reg_name' placeholder='Введите ваше реальное имя'></p>
+<p><label for='reg_surname'>* Фамилия: </label><br>
+<input id='reg_surname' required name='surname' placeholder="Введите вашу реальную фамилию"></p>
+<p><button type='submit'>Зарегистрироваться</button></p>
+</form>
+</div>
+<div class='pages' content='info'>
+<h2>Про WebPay</h2>
+<p>Тут будет информация о работе приложения</p>
+</div>
+<div class='pages' content='contacts'>
+<h2>Контакты</h2>
+<p>Тут будет контактная информация</p>
+</div>
+<div class='pages' content='users'>
+<h2>Пользователи</h2>
+<div id='users_list'></div>
+</div>
+
+
+<div class='pages' content='not404'>
+<h2>404</h2>
+<p>Такой страницы нет</p>
+<p><a class='menu_link' href='#index' tabindex='0'>Вернуться на главную</a></p>
+</div>
+</main>
+<footer>
+<p>&copy; SystemPages</p></p>
+</footer>
+<script>
+displayContent(window.location.hash);
+</script>
+<script src="./on.js"></script>
+
+</body>
+</html>

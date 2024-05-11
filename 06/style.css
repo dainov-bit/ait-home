@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
+
+* {
+  margin: 0;
+}
+body {
+    font-family: "Poller One", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('./images/sky.jpg');
+    /* фиксация фонового изображения */
+    background-attachment: fixed;
+    color: #eedb00;
+  }
+  
+  header {
+      background-color: rgba(60, 69, 67, .6);
+      /* закругление углов элемента */
+      border-radius: 15px 15px 0 0;
+  }
+  
+  ul {
+      list-style: none;
+      padding: 0;
+      /* элемент зафиксирован на экране */
+      position: fixed   ;
+      top: 5px;
+      left: 40px;
+      display: flex;
+  }
+  
+  h1, h2 {
+      text-align: center;
+  }
+  
+  h1 {
+      font-size: 2.2em;
+  }
+  
+  .left {
+      float: left;
+      width: 25%;
+  }
+  
+  .left > img {
+      width: 100%;
+  }
+  
+  .right {
+      float: right;
+      width: 50%;
+      border: 1px solid #eedb00;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  
+  h2 {
+      width: 100%;
+  }
+  
+  .right > img {
+      width: 32%;
+  }

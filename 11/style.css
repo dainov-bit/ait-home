@@ -1,0 +1,17 @@
+
+#container {
+position: relative;
+margin: 0 auto;
+height: 200px;
+width: 200px;
+background-color: green;
+border: 2px solid #000000;
+}
+#box {
+height: 50px;
+width: 50px;
+background-color: red;
+position: absolute;
+top: 0px;
+left: 0px;
+}

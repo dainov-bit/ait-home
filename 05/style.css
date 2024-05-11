@@ -1,0 +1,41 @@
+.main {
+    height: 700px;
+    background-image: url("./img/bg.jpg");
+    background-position:  center;
+    position: relative;
+    background-size: cover;
+}   
+.img_class {
+position:absolute
+}
+#superman {
+    right:4.80%;
+    bottom:0.40%; 
+}
+#planet-3 {
+ right: 40%;
+top: 62%;
+z-index: 1;
+}
+#planet-2 {
+    left: 30%;
+    top:  54%;
+    z-index: 0;
+}
+#planet-1 {
+    left: 41%;
+    top: 45%;
+}
+#spaceship {
+ left: 37%;
+ top: 68%;
+}
+#ufo {
+    left: 36%;
+    top: 85%;
+    z-index: 2;
+}
+#asteroid {
+    left: 70%;
+top: 30%;
+}
